@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body ng-app="NameCalculator">
+    
+    <div class="name-calculator" ng-controller="NameCalculatorController">
+        <h1>Meal calculator</h1>
+        <div>
+            <label>Your meal</label>
+            <input type="text" ng-model="meal"/>
+            <button ng-click="evalResult()">Check if too much</button>
+        </div>
+        <p>Result: <span class={{color}}>{{result}}</span></p>
+    </div>
+
+  </body>
+</html>
